@@ -5,6 +5,11 @@ import {resolve} from 'path';
 // https://vite.dev/config/
 export default defineConfig({
   plugins: [react()],
+  server:{
+    hmr: {
+      overlay: false
+    }
+  },
   build: {
     rollupOptions: {
       input: {
